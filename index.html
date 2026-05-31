@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轻量化在线音乐播放器 - 移动开发大作业</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 页面头部 -->
+        <header>
+            <h1>🎵 音乐播放器</h1>
+            <p class="subtitle">Mobile Development Project</p>
+        </header>
+
+        <!-- 搜索区域 -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="🔍 搜索歌曲或歌手...">
+        </div>
+
+        <!-- 歌曲列表区域 -->
+        <div class="song-list" id="songList">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>正在加载歌曲列表...</p>
+            </div>
+        </div>
+
+        <!-- 音乐播放器区域 -->
+        <div class="player" id="player">
+            <div class="player-header">
+                <div class="current-cover" id="currentCover">🎵</div>
+                <div class="current-info">
+                    <div class="current-title" id="currentTitle">暂无歌曲</div>
+                    <div class="current-artist" id="currentArtist">点击歌曲开始播放</div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="control-btn" id="prevBtn">⏮</div>
+                <div class="control-btn play" id="playBtn">▶</div>
+                <div class="control-btn" id="nextBtn">⏭</div>
+            </div>
+        </div>
+
+        <!-- 错误提示区域 -->
+        <div class="toast" id="toast"></div>
+    </div>
+
+    <!-- 底部全局进度条 -->
+    <div class="bottom-progress" id="bottomProgress">
+        <div class="bottom-progress-bar" id="bottomProgressBar">
+            <div class="bottom-progress-fill" id="bottomProgressFill"></div>
+        </div>
+        <div class="bottom-progress-time">
+            <span id="bottomCurrentTime">0:00</span>
+            <span id="bottomDuration">0:00</span>
+        </div>
+    </div>
+
+    <script src="config.js?v=20240102"></script>
+    <script src="app.js?v=20240102"></script>
+</body>
+</html>
