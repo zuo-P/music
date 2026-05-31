@@ -44,9 +44,4 @@ const SONGS_CONFIG = [
         author: 'yes工程师',
         url: './music/song7.mp3'
     },
-    {
-        name: '测试歌曲',
-        author: '测试',
-        url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'
-    },
 ];
